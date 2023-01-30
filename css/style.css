@@ -1,0 +1,163 @@
+/* Основные стили, база! */
+
+html {
+	box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+ul,
+li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0;
+}
+
+body {
+	color: #2f3035;
+	font-family: "SFProDisplay-Regular", sans-serif;
+	font-size: 20px;
+	line-height: 24px;
+}
+
+.container {
+	max-width: 1200px;
+	padding: 0 15px;
+	margin: 0 auto;
+}
+
+/* Основные стили, база! */
+
+/* Хэдер топ */
+.header__top-inner {
+	min-height: 122px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-family: "SFProDisplay-Bold", sans-serif;
+	font-weight: 700;
+}
+
+.menu__item {
+	display: inline-block;
+}
+
+.menu__item + .menu__item {
+	padding-left: 50px;
+}
+
+.header__box {
+	display: flex;
+}
+
+.header__adress {
+	margin-right: 60px;
+	width: 265px;
+	padding-left: 30px;
+	position: relative;
+}
+
+.header__adress::before {
+	content: "";
+	position: absolute;
+	background-image: url("../images/icons/adress.svg");
+	width: 30px;
+	height: 30px;
+	left: 0;
+	top: -10px;
+}
+
+.user-list {
+	display: flex;
+	align-items: center;
+	margin-right: 15px;
+}
+
+.user-list__item {
+	padding-right: 10px;
+}
+
+.basket {
+	position: relative;
+}
+
+.basket__num {
+	position: absolute;
+	font-family: "SFProDisplay-Medium", sans-serif;
+	color: #fff;
+	font-weight: 500;
+	font-size: 10px;
+	line-height: 20px;
+	width: 20px;
+	height: 20px;
+	background-color: #1c62cd;
+	border-radius: 50%;
+	text-align: center;
+	bottom: -15px;
+	right: -14px;
+}
+
+/* Хэдер топ */
+
+/* Хэдер нижний, категории */
+
+.header__bottom {
+	margin-bottom: 78px;
+}
+
+.menu-categories {
+	background-color: #f0f0f4;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	min-height: 53px;
+}
+
+.menu-categories__link {
+	position: relative;
+	transition: all 0.3s;
+	padding: 15px 0 14px;
+}
+
+.menu-categories__link:hover {
+	font-family: "SFProDisplay-Semibold", sans-serif;
+	color: #000;
+}
+
+.menu-categories__link::before {
+	content: "";
+	position: absolute;
+	width: 0;
+	left: auto;
+	right: 0;
+	bottom: -2px;
+	background-color: #1c62cd;
+	height: 3px;
+	transition: all 0.3s;
+}
+
+.menu-categories__link:hover::before {
+	width: 100%;
+	right: auto;
+	left: 0;
+}
+
+/* Хэдер нижний, категории */
